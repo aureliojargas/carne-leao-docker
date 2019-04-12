@@ -1,0 +1,11 @@
+version: '2'
+services:
+  carne-leao:
+    container_name: carne-leao
+    image: aureliojargas/carne-leao
+    build: .
+    environment:
+      - DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/ProgramasRFB:/home/leao/ProgramasRFB
