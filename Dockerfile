@@ -9,7 +9,7 @@ USER leao
 WORKDIR /home/leao
 
 # Download and expand the app into ~/app
-ARG url=https://downloadirpf.receita.fazenda.gov.br/irpf/2018/carne-leao/LEAO2018v1.1.zip
+ARG url=https://downloadirpf.receita.fazenda.gov.br/irpf/2019/leao/LEAO2019v1.0.zip
 RUN wget "$url" -O app.zip --no-check-certificate && \
     unzip app.zip && \
     rm app.zip && \
