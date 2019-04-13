@@ -40,6 +40,12 @@ Este é o repositório com os fontes para a imagem Docker [aureliojargas/carne-l
 
 - [Por que precisa do xhost?](http://wiki.ros.org/docker/Tutorials/GUI)
 
+- O comportamento padrão é sempre rodar a versão mais recente (`latest`). Se você precisar de uma versão mais antiga, use tags. Por exemplo, para rodar o programa de 2018, use a imagem `aureliojargas/carne-leao:2018`. Veja [a lista de tags disponíveis](https://cloud.docker.com/repository/docker/aureliojargas/carne-leao/tags).
+
+## Contribuições
+
+Sua ajuda é muito bem-vinda! Se virar o ano e eu não atualizar a imagem, ou se você tem uma sugestão de melhoria, mande seu Pull Request.
+
 ## Créditos
 
 Inspirado pelo [andresmrm/docker-irpf](https://github.com/andresmrm/docker-irpf), que disponibilizou o programa principal do IRPF numa imagem com o Alpine Linux.
