@@ -12,6 +12,7 @@ Este é o repositório com os fontes para a imagem Docker [aureliojargas/carne-l
 
     docker run --rm \
         -e DISPLAY \
+        -e _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on' \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
         -v ~/ProgramasRFB:/home/leao/ProgramasRFB \
         aureliojargas/carne-leao

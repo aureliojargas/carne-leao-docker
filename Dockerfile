@@ -1,6 +1,6 @@
 # Use Alpine Linux for minimal image size
 FROM openjdk:8-alpine
-RUN apk add --no-cache wget
+RUN apk add --no-cache wget ttf-dejavu
 
 # Run as a normal user, not root
 RUN adduser -D -u 1000 leao
