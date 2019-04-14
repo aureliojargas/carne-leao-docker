@@ -5,8 +5,11 @@ set -eu
 
 data_dir="$HOME/ProgramasRFB"
 
+# Make sure the data folder exists before running the container, otherwise
+# 'docker run -v' will force its creation and it will be owned by root.
 test -d "$data_dir" || mkdir "$data_dir"
 
+# Why xhost? Read http://wiki.ros.org/docker/Tutorials/GUI
 xhost +local:docker
 
 docker run --rm \
