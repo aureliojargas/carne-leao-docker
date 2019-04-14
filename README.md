@@ -8,13 +8,13 @@ Este é o repositório com os fontes para a imagem Docker [aureliojargas/carne-l
 
 A imagem do Carnê-Leão pronta está hospedada no Docker Hub, então para utilizá-la você só precisa rodar o script `run.sh` e nada mais. Renomeá-lo para `leao.sh` pode ser uma boa:
 
-    curl -LO https://github.com/aureliojargas/carne-leao-docker/raw/2019/run.sh
-    mv -v run.sh leao.sh
-    sh leao.sh
+    curl -L -o leao.sh https://github.com/aureliojargas/carne-leao-docker/raw/2019/run.sh
+    chmod +x leao.sh
+    ./leao.sh
 
 Caso precise rodar uma versão mais antiga do programa, informe o ano como argumento. Veja [a lista de versões disponíveis](https://cloud.docker.com/repository/docker/aureliojargas/carne-leao/tags). Exemplo:
 
-    sh leao.sh 2018
+    ./leao.sh 2018
 
 ## Como reconstruir a imagem
 
