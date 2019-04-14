@@ -12,6 +12,10 @@ A imagem do Carnê-Leão pronta está hospedada no Docker Hub, então para utili
     mv -v run.sh leao.sh
     sh leao.sh
 
+Caso precise rodar uma versão mais antiga do programa, informe o ano como argumento. Veja [a lista de versões disponíveis](https://cloud.docker.com/repository/docker/aureliojargas/carne-leao/tags). Exemplo:
+
+    sh leao.sh 2018
+
 ## Como reconstruir a imagem
 
 Caso queira reconstruir a imagem em sua máquina, clone este repositório e faça o build local da imagem antes de rodá-la:
@@ -26,8 +30,6 @@ Caso queira reconstruir a imagem em sua máquina, clone este repositório e faç
 - Estou assumindo que você roda o docker sem precisar de `sudo`. Caso contrário, coloque os `sudo` apropriados nos scripts.
 
 - Você sabe que os certificados desses sites do governo é uma novela, né? Por isso precisa da opção `--no-check-certificate` ao baixar o programa (vide `Dockerfile`) :(
-
-- O comportamento padrão é sempre rodar a versão mais recente (`latest`). Se você precisar de uma versão mais antiga, use tags. Por exemplo, para rodar o programa de 2018, use a imagem `aureliojargas/carne-leao:2018`. Veja [a lista de tags disponíveis](https://cloud.docker.com/repository/docker/aureliojargas/carne-leao/tags).
 
 ## Contribuições
 
