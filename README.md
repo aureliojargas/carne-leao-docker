@@ -24,12 +24,8 @@ Este é o repositório com os fontes para a imagem Docker [aureliojargas/carne-l
     git clone https://github.com/aureliojargas/carne-leao-docker.git
     cd carne-leao-docker
 
-    mkdir ~/ProgramasRFB
-
     docker-compose build
-
-    xhost +local:docker && docker-compose up
-    xhost -local:docker
+    ./run.sh
 
 ## Detalhes
 
