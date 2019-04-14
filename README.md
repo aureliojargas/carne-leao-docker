@@ -23,13 +23,12 @@ Este é o repositório com os fontes para a imagem Docker [aureliojargas/carne-l
 
     git clone https://github.com/aureliojargas/carne-leao-docker.git
     cd carne-leao-docker
-
-    docker-compose build
+    ./build.sh
     ./run.sh
 
 ## Detalhes
 
-- Estou assumindo que você roda o docker e docker-compose sem precisar de `sudo`. Caso contrário, coloque os `sudo` apropriados.
+- Estou assumindo que você roda o docker sem precisar de `sudo`. Caso contrário, coloque os `sudo` apropriados nos scripts.
 
 - Você tem que criar o diretório `~/ProgramasRFB` antes de rodar o contêiner, senão esse diretório será criado pelo usuário `root` e você terá que arrumar as permissões manualmente.
 
