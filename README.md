@@ -31,6 +31,10 @@ Caso queira reconstruir a imagem em sua máquina, clone este repositório e faç
 
 - Você sabe que os certificados desses sites do governo é uma novela, né? Por isso precisa da opção `--no-check-certificate` ao baixar o programa (vide `Dockerfile`) :(
 
+- Cada ano possui uma branch neste repositório (note que não tem a branch `master`). A cada commit novo, a imagem Docker é regerada automaticamente pelo Docker Hub, que já coloca a tag do ano, e no caso de ser a branch do ano corrente, também coloca a tag `latest`.
+
+- A cada ano novo que vira: crie a branch nova, atualize as regras de build automático no Docker Hub, atualize a URL do arquivo ZIP no Dockerfile.
+
 ## Contribuições
 
 Sua ajuda é muito bem-vinda! Se virar o ano e eu não atualizar a imagem, ou se você tem uma sugestão de melhoria, mande seu Pull Request.
